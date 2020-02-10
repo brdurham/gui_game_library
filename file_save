@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+#Gentry Cross
+#1/28/2020
+import pickle
+
+
+games = { 1 :['FPS', 'Halo3', 'Bunjee', 'Microsoft', 'Xbox360', '2007', '10', 'either', 
+              '30.00', 'yes', '1/5/2008', 'This game blows chunks'],
+          2 :['FPS', 'Halo2', 'Bunjee', 'Microsoft', 'Xbox360', '2006', '10', 'either', 
+                        '30.00', 'yes', '1/5/2007', 'This game blows chunks'] }
+
+
+data_file = open("game_lib.pickle", "wb")
+pickle.dump(games, data_file)
+data_file.close()
+
